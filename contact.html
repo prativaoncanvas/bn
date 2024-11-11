@@ -6,7 +6,12 @@
       <title>যোগাযোগ - প্রতিভার ক্যানভাস</title>
       <link rel="stylesheet" href="/en/css/styles.css">
       <link rel="icon" href="/en/icons/favicon.ico" type="image/x-icon">
-     <script src="/en/scripts/connect.js"></script>
+      <script>
+         function redirectToPage(event) {
+           event.preventDefault();
+           window.location.href = "contact.html";
+         }
+      </script>
    </head>
    <body>
       <header>
@@ -14,7 +19,7 @@
             <a href="index.html"><img src="/en/icons/logo.png" alt="প্রতিভার ক্যানভাস লোগো"></a>
             <h1>প্রতিভার ক্যানভাস</h1>
             <div class="language-toggle">
-                <a href="/en/index.html" id="toggleEN">EN</a> &nbsp|&nbsp <a href="index.html" id="toggleBN">বাংলা</a>
+               <a href="/en/index.html" id="toggleEN">EN</a> &nbsp|&nbsp <a href="index.html" id="toggleBN">বাংলা</a>
             </div>
          </div>
          <nav>
