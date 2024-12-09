@@ -11,29 +11,7 @@
       <link rel="shortcut icon" href="/en/favicon/favicon.ico" />
       <link rel="apple-touch-icon" sizes="180x180" href="/en/favicon/apple-touch-icon.png" />
       <link rel="manifest" href="/en/favicon/site.webmanifest" />
-      <script>
-         function redirectToPage(event) {
-           event.preventDefault();
-           window.location.href = "connect.html";
-         }
-		 
-		function handleSubmit(event) {
-		  event.preventDefault(); // Prevent default form submission
-		  const form = event.target;
-
-		  // Submit the form data to Google Form
-		  fetch(form.action, {
-			method: 'POST',
-			body: new FormData(form),
-			mode: 'no-cors' // Required for cross-origin requests
-		  }).then(() => {
-			// Redirect to Thank You page
-			window.location.href = 'connect.html';
-		  }).catch(() => {
-			alert('Error submitting your query. Please try again.');
-		  });
-		}
-      </script>
+      <script src="/en/scripts/connect.js"></script>
    </head>
    <body>
       <header>
